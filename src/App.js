@@ -8,6 +8,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<HomeComp/>} />
+        <Route path='/home' element={<HomeComp/>} />
       </Routes>
     </div>
     

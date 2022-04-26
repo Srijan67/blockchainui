@@ -25,13 +25,13 @@ const Navbar = () => {
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className=" hidden md:flex space-x-10 md:w-full flex-1 md:justify-center md:items-center">
+          <Popover.Group as="nav" className="relative z-20 hidden md:flex space-x-10 md:w-full flex-1 md:justify-center md:items-center">
            
 
-            <NavLink className={"text-xl font-semibold "} to={"/"}>Home</NavLink>
-            <NavLink className={"text-xl font-semibold "} to={"/"}>Projects</NavLink>
-            <NavLink className={"text-xl font-semibold "} to={"/"}>Service</NavLink>
-            <NavLink className={"text-xl font-semibold "} to={"/"}>Blog</NavLink>
+            <NavLink className={"text-xl font-semibold "} to={"/home"}>Home</NavLink>
+            <NavLink className={"text-xl font-semibold "} to={"/projects"}>Projects</NavLink>
+            <NavLink className={"text-xl font-semibold "} to={"/service"}>Service</NavLink>
+            <NavLink className={"text-xl font-semibold "} to={"/blog"}>Blog</NavLink>
           </Popover.Group>
             <img className='hidden md:block h-fit w-32 absolute md:right-44 top-6 right-4' srcSet={NavLinkImage} alt="nav image print"/>
         </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Popover.Panel focus className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6">
               <div className="flex items-center justify-between text-black">
@@ -58,13 +58,13 @@ const Navbar = () => {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-3 text-black justify-center text-center">
+              <div className=" mt-6">
+                <nav className=" grid gap-y-3 text-black justify-center text-center">
                  
-                  <NavLink to={"/"}>Home</NavLink>
-                  <NavLink to={"/"}>Projects</NavLink>
-                  <NavLink to={"/"}>Service</NavLink>
-                  <NavLink to={"/"}>Blog</NavLink>
+                  <NavLink to={"/home"}>Home</NavLink>
+                  <NavLink to={"/projects"}>Projects</NavLink>
+                  <NavLink to={"/service"}>Service</NavLink>
+                  <NavLink to={"/blog"}>Blog</NavLink>
                 </nav>
               </div>
             </div>

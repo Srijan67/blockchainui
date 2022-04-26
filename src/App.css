@@ -1,5 +1,7 @@
-.App {
+.partner {
   background: linear-gradient(90deg, #003378 0%, #05104B 100%);
+}
+.App {
   background-image: url('./images/mainbg.png');
 }
 .my-nav {
