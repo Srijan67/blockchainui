@@ -1,8 +1,7 @@
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import ExploreBtn from "../images/svg/exporebtn.svg"
-import BtcImage from "../images/btcimg.png"
 import UnityLogo from "../images/uintyimg.png"
 import Twitter from "../images/svg/twittter.svg"
 import Fb from "../images/svg/fb.svg"
