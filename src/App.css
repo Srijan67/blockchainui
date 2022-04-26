@@ -13,17 +13,47 @@
   background-position: bottom;
   padding-left: 8rem;
 }
-.headarea {
-  background-image:  url('./images/headbg.png');
-  background-size: 52%;
+.carousel div .headarea {
+  background-image:  url('./images/headbg.png'), url('./images/btcimg.png');
+  background-size: 52%, 30%;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right top, 93% center;
   height: 70vh;
+  height: max-content;
 }
 .headtextShadow {
   filter: drop-shadow(.5px 1px 5px rgba(255, 255, 255, 0.541));
 }
+.explorebtn {
+  width: 16rem;
+}
+.carousel div {
+ 
+  height: fit-content;
+  margin: auto;
+}
+ul.slick-dots {
+  position: absolute;
 
+}
+ul.slick-dots li {
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 2rem;
+  transform: translate(4vw, -40vh);
+}
+ul.slick-dots li button:before {
+ color: #fff;
+ text-align: start;
+ opacity: 1;
+}
+ul.slick-dots li.slick-active button:before {
+  color: transparent;
+  content: "";
+  background-color: #fff;
+  border-radius: 3px;
+  width: 5px;
+ }
 @media  screen and (max-width: 800px) {
   .my-nav {
     padding-left: 1rem;
@@ -32,5 +62,20 @@
   .headarea {
     background-position: center bottom;
     background-size: 110%;
+  }
+  ul.slick-dots {
+    transform: translate(-5vw, 5vh);
+  }
+  .explorebtn {
+    width: 40%;
+    padding-bottom: 2rem;
+  }
+  .carousel div .headarea {
+    background-image:  url('./images/headbg.png'), url('./images/btcimg.png');
+    background-size: 52%, 60%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 70vh;
+    height: max-content;
   }
 }
