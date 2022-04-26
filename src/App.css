@@ -1,0 +1,33 @@
+.App {
+  background: linear-gradient(90deg, #003378 0%, #05104B 100%);
+  background-image: url('./images/mainbg.png');
+}
+.my-nav {
+  background-image: url("./images/navstyleimg.png");
+  background-size: cover;
+  height: 15vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-left: 8rem;
+}
+.headarea {
+  background-image:  url('./images/headbg.png');
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 70vh;
+}
+.headtextShadow {
+  filter: drop-shadow(.5px 1px 5px rgba(255, 255, 255, 0.541));
+}
+@media  screen and (max-width: 800px) {
+  .my-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .headarea {
+    background-position: center bottom;
+    background-size: 110%;
+  }
+}
