@@ -21,6 +21,7 @@
 .headtextShadow {
   filter: drop-shadow(.5px 1px 5px rgba(255, 255, 255, 0.541));
 }
+
 @media  screen and (max-width: 800px) {
   .my-nav {
     padding-left: 1rem;

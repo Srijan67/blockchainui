@@ -33,7 +33,7 @@ const Navbar = () => {
             <NavLink className={"text-xl font-semibold "} to={"/"}>Service</NavLink>
             <NavLink className={"text-xl font-semibold "} to={"/"}>Blog</NavLink>
           </Popover.Group>
-            <img className='h-fit w-32 absolute md:right-44 top-6 right-4 hidden' srcSet={NavLinkImage} alt="nav image print"/>
+            <img className='hidden md:block h-fit w-32 absolute md:right-44 top-6 right-4' srcSet={NavLinkImage} alt="nav image print"/>
         </div>
       </div>
 
