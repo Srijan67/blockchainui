@@ -1,8 +1,9 @@
 .partner {
-  background: linear-gradient(90deg, #003378 0%, #05104B 100%);
+  background: linear-gradient(90deg, #003378 0%, #05104b 100%);
+  height: fit-content;
 }
 .App {
-  background-image: url('./images/mainbg.png');
+  background-image: url("./images/mainbg.png");
 }
 .my-nav {
   background-image: url("./images/navstyleimg.png");
@@ -14,7 +15,7 @@
   padding-left: 8rem;
 }
 .carousel div .headarea {
-  background-image:  url('./images/headbg.png'), url('./images/btcimg.png');
+  background-image: url("./images/headbg.png"), url("./images/btcimg.png");
   background-size: 52%, 30%;
   background-repeat: no-repeat;
   background-position: right top, 93% center;
@@ -22,19 +23,17 @@
   height: max-content;
 }
 .headtextShadow {
-  filter: drop-shadow(.5px 1px 5px rgba(255, 255, 255, 0.541));
+  filter: drop-shadow(0.5px 1px 5px rgba(255, 255, 255, 0.541));
 }
 .explorebtn {
   width: 16rem;
 }
 .carousel div {
- 
   height: fit-content;
   margin: auto;
 }
 ul.slick-dots {
-  position: absolute;
-
+  width: 0px;
 }
 ul.slick-dots li {
   display: flex;
@@ -43,9 +42,9 @@ ul.slick-dots li {
   transform: translate(4vw, -40vh);
 }
 ul.slick-dots li button:before {
- color: #fff;
- text-align: start;
- opacity: 1;
+  color: #fff;
+  text-align: start;
+  opacity: 1;
 }
 ul.slick-dots li.slick-active button:before {
   color: transparent;
@@ -53,8 +52,40 @@ ul.slick-dots li.slick-active button:before {
   background-color: #fff;
   border-radius: 3px;
   width: 5px;
- }
-@media  screen and (max-width: 800px) {
+}
+.carousel div .headarea .explorebtn {
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+/* introduction area styling */
+.intro-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.blurcircleimg {
+  transform: translate(20%, -25%);
+  opacity: 0.55;
+}
+.boxIntroImg {
+  width: 65%;
+}
+.intro-text {
+  width: 100%;
+}
+.stats {
+  transform: translate(35%, 15%);
+}
+.contentArea {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.neon1 {
+  transform: translate(25%, -30%);
+}
+@media screen and (max-width: 800px) {
   .my-nav {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -71,7 +102,7 @@ ul.slick-dots li.slick-active button:before {
     padding-bottom: 2rem;
   }
   .carousel div .headarea {
-    background-image:  url('./images/headbg.png'), url('./images/btcimg.png');
+    background-image: url("./images/headbg.png"), url("./images/btcimg.png");
     background-size: 52%, 60%;
     background-repeat: no-repeat;
     background-position: center bottom;

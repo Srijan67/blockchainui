@@ -1,19 +1,17 @@
-import './App.css';
-import { Routes, Route} from "react-router-dom"
-import Navbar from './components/Navbar';
-import HomeComp from './components/homeComp';
-import Service from './components/Service';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomeComp from "./components/homeComp";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<HomeComp/>} />
-        <Route path='/home' element={<HomeComp/>} />
-        <Route path='/service' element={<Service/>} />
+        <Route path="/" element={<HomeComp />} />
+        <Route path="/home" element={<HomeComp />} />
+        {/* <Route path="/service" element={<Service />} /> */}
       </Routes>
     </div>
-    
   );
 }
 
