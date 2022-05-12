@@ -1,8 +1,10 @@
 import Bound from "../images/introimg.png";
 import CImg1 from "../images/contentArea/c1.png";
 import CImg2 from "../images/contentArea/c2.png";
+import CImg3 from "../images/contentArea/c3.png";
 import BlurCircle from "../images/blur-circle.png";
 import Neon from "../images/neon1.png";
+import Neon2 from "../images/neon2.png";
 const Intro = () => {
   return (
     <>
@@ -78,6 +80,25 @@ const Intro = () => {
         </div>
         <div className="relative">
           <img className="md:w-4/5" srcSet={CImg2} alt="SEC C" />
+        </div>
+      </div>
+      <div className="contentArea md:mt-36">
+        <div className="relative">
+          <img className="md:w-2/3 m-auto" srcSet={CImg3} alt="first C" />
+        </div>
+        <div className="text-white m-auto md:w-4/5">
+          <h2 className="text-3xl text-green-500 -tracking-tighter">AUDIT</h2>
+          <h1 className="text-5xl font-bold leading-snug">
+            Stay secure and safe
+          </h1>
+          <p className="text-3xl leading-snug opacity-60">
+            Above all that matters is a secure and safe smart contract that is
+            free from any vulnerability and does not hamper the investment of
+            the various people who have trusted you. We also provide auditing
+            services , so that you can stay assured of the security as we are
+            quick in auditing and exposing the bugs of your smart contract.
+          </p>
+          <img className="neon2" srcSet={Neon2} alt="thrid C" />
         </div>
       </div>
     </>
