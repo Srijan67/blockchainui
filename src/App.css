@@ -4,6 +4,7 @@
 }
 .App {
   background-image: url("./images/mainbg.png");
+  min-height: 100vh;
 }
 .my-nav {
   background-image: url("./images/navstyleimg.png");

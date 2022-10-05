@@ -29,11 +29,11 @@ const Navbar = () => {
             <NavLink className={"text-xl font-semibold "} to={"/home"}>
               Home
             </NavLink>
-            <NavLink className={"text-xl font-semibold "} to={"/projects"}>
-              Projects
+            <NavLink className={"text-xl font-semibold "} to={"/Coins"}>
+              Coins
             </NavLink>
-            <NavLink className={"text-xl font-semibold "} to={"/service"}>
-              Service
+            <NavLink className={"text-xl font-semibold "} to={"/exchange"}>
+              Exchange
             </NavLink>
             <NavLink className={"text-xl font-semibold "} to={"/blog"}>
               Blog

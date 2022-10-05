@@ -1,0 +1,43 @@
+.container {
+  width: calc(100vw - 280px);
+  margin: 0px auto;
+}
+.singleCoin {
+  color: white;
+
+  margin-top: 12px;
+  /* background: linear-gradient(90deg, #003378 25%, #05104b 100%); */
+  background: linear-gradient(90deg, #05104b 25%, #003378 100%);
+  height: 10vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.cryptoLogo {
+  width: 45px;
+  height: 45px;
+}
+.loaderStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.singleCoin h3 {
+  font-weight: 500;
+  margin-left: 7px;
+  font-size: 20px;
+}
+.details {
+  margin-left: auto;
+  padding-right: 10px;
+}
+.price {
+  text-align: right;
+}
+.symbol {
+  font-size: 13px;
+  font-weight: 500;
+}

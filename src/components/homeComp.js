@@ -1,4 +1,3 @@
-import React from "react";
 import HeadBottom from "../images/headbottomimg.png";
 import PartnerComp from "./Partner";
 import Slide from "./Slide";
